@@ -28,30 +28,30 @@ const Services = () => {
 ];
 
   return (
-    <section id="services" className="bg-white px-5 py-16 sm:px-10 sm:py-20 lg:px-[7vw]">
+    <section id="services" className="bg-white px-4 py-14 sm:px-10 sm:py-20 lg:px-[7vw]">
         <div className="mx-auto max-w-[1440px]">
           <div>
-            <h2 className="text-4xl font-extrabold tracking-normal text-slate-800 sm:text-5xl lg:text-6xl">
+            <h2 className="text-3xl font-extrabold tracking-normal text-slate-800 sm:text-5xl lg:text-6xl">
               Top Services
             </h2>
-            <div className="mt-5 h-1.5 w-40 bg-amber-400" aria-hidden="true" />
+            <div className="mt-5 h-1.5 w-28 bg-amber-400 sm:w-40" aria-hidden="true" />
           </div>
 
-          <div className="mt-11 grid gap-6 md:grid-cols-2 xl:grid-cols-3 xl:gap-x-11 xl:gap-y-14">
+          <div className="mt-9 grid gap-5 sm:grid-cols-2 lg:mt-11 xl:grid-cols-3 xl:gap-x-11 xl:gap-y-14">
             {topServices.map((service) => (
               <article
                 key={service.title}
-                className="flex min-h-[182px] items-center justify-between gap-5 rounded-lg bg-slate-50 px-6 py-8 shadow-sm ring-1 ring-slate-100 transition hover:-translate-y-1 hover:shadow-md sm:px-8"
+                className="flex min-h-[160px] items-start justify-between gap-4 rounded-lg bg-slate-50 px-5 py-7 shadow-sm ring-1 ring-slate-100 transition hover:-translate-y-1 hover:shadow-md sm:min-h-[182px] sm:items-center sm:px-8"
               >
                 <div className="min-w-0">
-                  <h3 className="text-2xl font-extrabold leading-tight text-slate-950">
+                  <h3 className="text-xl font-extrabold leading-tight text-slate-950 sm:text-2xl">
                     {service.title}
                   </h3>
-                  <p className="mt-3 max-w-[210px] text-base leading-relaxed text-slate-500">
+                  <p className="mt-3 max-w-[230px] text-sm leading-relaxed text-slate-500 sm:text-base">
                     {service.description}
                   </p>
                 </div>
-                <span className="shrink-0 text-6xl leading-none drop-shadow-sm sm:text-7xl" aria-hidden="true">
+                <span className="shrink-0 text-5xl leading-none drop-shadow-sm sm:text-7xl" aria-hidden="true">
                   {service.icon}
                 </span>
               </article>
